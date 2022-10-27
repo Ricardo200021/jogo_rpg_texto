@@ -9,7 +9,7 @@
 </head>
 <body>
     <body background="imagens/ceuNoite.jpg"></body>
-    <audio src="som/sexpistols.m4a" autoplay loop></audio>
+    <audio src="som/sexpistols.m4a" autoplay ></audio>
 
     <div>
 
@@ -34,7 +34,17 @@
         <hr>
         <br>
         <p>
-            Ela faz você acelerar o maverik para que possa chegar antes das 03:00 em casa, então voçê começa a perguntar por que a pressa e logo agora que estava ficando bom. Ela parecendo nervosa apenas fala pra ir mais rápido sem fazer perguntas, porém, um pequeno detalhe: você está chapado. Sempre que você vai até o casarão saí de la chapado e dirige de boa até em casa, mas é a primeira vez que tem que dirigir sob pressão. E por essa razão por um pequeno deslize na estrada correndo a 110 km/h o maverikão derrapou e girou na estrada ficando por alguns segundos em apenas duas rodas e parando somente quando bateu de lado em uma árvore.
+            <script>
+                function ativarDerrapar() {
+
+                let y = document.getElementById("derrapar");
+                    y.play();
+            }
+
+            </script>
+
+            <audio src="som/batidaCarro.m4a" id="derrapar" onclick="ativarDerrapar()"></audio>
+            Ela faz você acelerar o maverik para que possa chegar antes das 03:00 em casa, então voçê começa a perguntar por que a pressa e logo agora que estava ficando bom. Ela parecendo nervosa apenas fala pra ir mais rápido sem fazer perguntas, porém, um pequeno detalhe: você está chapado. Sempre que você vai até o casarão saí de la chapado e dirige de boa até em casa, mas é a primeira vez que tem que dirigir sob pressão. E por essa razão por um pequeno deslize na estrada correndo a 110 km/h o maverikão <button onclick="ativarDerrapar()" style="background-color: #000;color: blue;">derrapou</button> e girou na estrada ficando por alguns segundos em apenas duas rodas e parando somente quando bateu de lado em uma árvore.
         </p>
         <br>
         <hr>
